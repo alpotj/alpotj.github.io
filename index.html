@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpot – Data Scientist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/profil.png" alt="Photo de profil" class="photo">
+    <h1>Alpot</h1>
+    <p>Data Scientist</p>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>
+        Je suis data scientist basé à Madagascar. Je travaille avec Python et SQL
+        pour collecter, nettoyer et analyser des données, et je construis aussi des
+        pipelines de données et des applications mobiles.
+      </p>
+      <p>
+        J'aime transformer des données brutes en résultats utiles et lisibles,
+        notamment pour des projets adaptés au contexte malgache.
+      </p>
+      <p>
+        Je suis ouvert à des missions, collaborations et opportunités en data science.
+      </p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="tags">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Pandas</li>
+        <li>Machine Learning</li>
+        <li>Visualisation de données</li>
+      </ul>
+    </section>
+
+    <section id="projets">
+      <h2>Projets</h2>
+
+      <article class="projet">
+        <h3>Surveillance et facturation eau/électricité en temps réel</h3>
+        <p><strong>Problème :</strong> suivre la consommation d'eau et d'électricité de plusieurs maisons, détecter automatiquement les pannes de compteur et les coupures, et facturer chaque client en fin de mois.</p>
+        <p><strong>Données :</strong> relevés de 6 compteurs simulés toutes les 10 secondes (en attendant de vrais capteurs de débit et de courant), stockés dans PostgreSQL.</p>
+        <p><strong>Méthode :</strong> pipeline de streaming avec Kafka, détection des pannes et coupures en Python, API REST + WebSocket pour les alertes en temps réel, dashboard React, génération de factures PDF envoyées par courriel chaque mois.</p>
+        <p><strong>Résultat :</strong> chaîne complète fonctionnelle de bout en bout, déployée sur Kubernetes (Minikube) avec CI/CD automatique via GitHub Actions.</p>
+        <ul class="tags">
+          <li>Python</li>
+          <li>Kafka</li>
+          <li>PostgreSQL</li>
+          <li>React</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          <li>GitHub Actions</li>
+        </ul>
+        <p><a href="https://github.com/alpotj/gestion-compteurs" target="_blank" rel="noopener">Voir le code</a></p>
+      </article>
+
+      <article class="projet">
+        <h3>Segmentation de clientèle avec K-means</h3>
+        <p><strong>Problème :</strong> regrouper les clients en segments homogènes pour mieux comprendre leurs comportements d'achat et mieux cibler les actions marketing.</p>
+        <p><strong>Données :</strong> base de clients avec plusieurs variables (profil, habitudes d'achat, montants dépensés), nettoyées et normalisées avant l'analyse.</p>
+        <p><strong>Méthode :</strong> algorithme de clustering K-means, avec choix du nombre de segments et visualisation des groupes obtenus.</p>
+        <p><strong>Résultat :</strong> des segments de clients bien distincts, chacun avec un profil d'achat différent, permettant d'adapter les actions à chaque groupe.</p>
+        <ul class="tags">
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>scikit-learn</li>
+          <li>K-means</li>
+        </ul>
+        <p><a href="https://github.com/alpotj/K_means" target="_blank" rel="noopener">Voir le code</a></p>
+      </article>
+
+      <article class="projet">
+        <h3>Modification d'images par Deep Learning</h3>
+        <p><strong>Problème :</strong> modifier automatiquement des images à l'aide d'un modèle de deep learning, sans retouche manuelle.</p>
+        <p><strong>Données :</strong> jeu d'images prétraitées (redimensionnement et normalisation) pour l'entraînement et le test du modèle.</p>
+        <p><strong>Méthode :</strong> réseau de neurones profond entraîné pour transformer les images, avec suivi de la qualité des résultats pendant l'entraînement.</p>
+        <p><strong>Résultat :</strong> un modèle capable de produire des images modifiées à partir d'images d'entrée.</p>
+        <ul class="tags">
+          <li>Python</li>
+          <li>Deep Learning</li>
+          <li>Traitement d'image</li>
+        </ul>
+        <p><a href="https://github.com/alpotj/modification-image" target="_blank" rel="noopener">Voir le code</a></p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Intéressé par une collaboration ou une opportunité en data science ? Écris-moi.</p>
+      <ul class="contacts">
+        <li><a href="mailto:alpotj09@gmail.com">alpotj09@gmail.com</a></li>
+        <li><a href="https://github.com/alpotj" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alpot</p>
+  </footer>
+</body>
+</html>
